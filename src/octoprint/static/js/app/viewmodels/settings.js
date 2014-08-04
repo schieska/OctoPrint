@@ -11,7 +11,7 @@ function SettingsViewModel(loginStateViewModel, usersViewModel) {
     self.appearance_color = ko.observable(undefined);
 
     /* I did attempt to allow arbitrary gradients but cross browser support via knockout or jquery was going to be horrible */
-    self.appearance_available_colors = ko.observable(["Default", "Dark Gray", "Silver", "Purple", "Blue", "Petrol Blue", "OctoPrint", "Lime", "Cadmium", "Cadmium", "Orange", "Soft Red", "Fuchsia", "Light Pink"]);
+    self.appearance_available_colors = ko.observable(["default", "dark-gray", "silver", "purple", "blue", "petrol-blue", "octoprint", "lime", "cadmium", "Cadmium", "Orange", "Soft Red", "Fuchsia", "Light Pink"]);
 
     self.printer_movementSpeedX = ko.observable(undefined);
     self.printer_movementSpeedY = ko.observable(undefined);
