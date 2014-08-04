@@ -5,7 +5,7 @@ body {
 }
 
 .navbar-inner-text (@base) {
-  text-shadow: 0 1px 0 contrast(@base, lighten(@base, 15%), darken(@base, 15%));
+  text-shadow: 0 1px 0 contrast(@base, lighten(@base, 5%), darken(@base, 5%));
   color: @text-color;
   @caret-color: average(@base, @text-color);
   @caret-hover-color: average(@caret-color, @text-color);
@@ -80,33 +80,53 @@ body {
   @base: #F2F2F2;
   .navbar-inner-color(@base);
 
-  &.red {
-    @base: #F22828;
+  &.darkgray {
+    @base: #303030;
     .navbar-inner-color(@base);
   }
-  &.orange {
-    @base: #F27728;
+  &.silver {
+    @base: #BDCCD4;
     .navbar-inner-color(@base);
   }
-  &.yellow {
-    @base: #F2DE28;
-    .navbar-inner-color(@base);
-  }
-  &.green {
-    @base: #77FF28;
+  &.purple {
+    @base: #2C1156;
     .navbar-inner-color(@base);
   }
   &.blue {
-    @base: #2877FF;
+    @base: #2CB1E1;
     .navbar-inner-color(@base);
   }
-  &.violet {
-    @base: #7728FF;
+  &.petrolblue {
+    @base: #047088;
     .navbar-inner-color(@base);
   }
-  &.black {
-    @base: #383838;
+  &.octoprintgreen {
+    @base: #1F9423;
     .navbar-inner-color(@base);
+  }
+  &.lime {
+    @base: #92C500;
+    .navbar-inner-color(@base);
+  }
+  &.cadmium {
+    @base: #EBC400;
+    .navbar-inner-color(@base);
+  }
+  &.orange {
+    @base: #FB881D;
+    .navbar-inner-color(@base);
+  }
+  &.softred {
+    @base: #FF3C36;
+    .navbar-inner-color(@base);
+  }
+  &.fuchsia {
+  @base: #D42156;
+  .navbar-inner-color(@base);
+  }
+  &.lightpink {
+  @base: #F1B7CD;
+  .navbar-inner-color(@base);
   }
   
   .brand span {
