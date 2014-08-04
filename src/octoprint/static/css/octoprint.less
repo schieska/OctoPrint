@@ -41,8 +41,8 @@ body {
 }
 
 .navbar-inner-color (@base) {
-  @top: lighten(@base, 25%);
-  @bottom: darken(@base, 15%);
+  @top: lighten(@base, 5%);
+  @bottom: darken(@base, 5%);
   
   @text-color-light: #f2f2f2;
   @text-color-dark: #333333;
@@ -80,7 +80,7 @@ body {
   @base: #F2F2F2;
   .navbar-inner-color(@base);
 
-  &.darkgray {
+  &.dark-gray {
     @base: #303030;
     .navbar-inner-color(@base);
   }
